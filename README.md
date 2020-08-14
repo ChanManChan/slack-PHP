@@ -30,11 +30,7 @@ The issue object as a json string.
 
 ```yaml
 uses: ChanManChan/slack-PHP@v1
-with:
-  token: ${{ secrets.GITHUB_TOKEN }}
-  title: Some Issue Title
-  body: Some Issue Body
-  assignees: |
-    ChanManChan
-    NandaGopal1
+  with:
+    slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
+    message: Hello from PHP, Slack
 ```
